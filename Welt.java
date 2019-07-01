@@ -24,17 +24,31 @@ public class Welt
         for(int i = 0;i < feld; i++){
             for(int k = 0; k < feld; i++){
                 if(matrix[i][k] == mine){
-                    if(matrix[i][k]==null){
+                    if(matrix[i-1][k]==null){
                     matrix[i-1][k] = new Zahl();
-                    matrix[i-1][k+1] = new Zahl();
-                    matrix[i][k+1] = new Zahl();
+                }
+                    if(matrix[i-1][k+1]==null){
+                matrix[i-1][k+1] = new Zahl();
+                }
+                if(matrix[i][k+1]==null){        
+                matrix[i][k+1] = new Zahl();
+                }
+                if(matrix[i+1][k+1]==null){
                     matrix[i+1][k+1] = new Zahl();
+                }
+                if(matrix[i+1][k]==null){
                     matrix[i+1][k] = new Zahl();
-                    matrix[i+1][k-1] = new Zahl();
+                }
+                if(matrix[i+1][k-1]==null){   
+                matrix[i+1][k-1] = new Zahl();
+                }
+                if(matrix[i][k-1]==null){
                     matrix[i][k-1] = new Zahl();
+                }
+                if(matrix[i][k]==null){
                     matrix[i-1][k-1] = new Zahl();
                 }
-                }
+            }
             }
         }
     }
