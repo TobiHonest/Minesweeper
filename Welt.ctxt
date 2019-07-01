@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Welt
+comment1.params=Feldgr\u00F6sse\ AnzahlMinen
+comment1.target=Welt(int,\ int)
+comment2.params=AnzahlMinen
+comment2.target=void\ mienenSetzen(int)
+comment3.params=
+comment3.target=void\ zahlenSetzen()
+numComments=4
